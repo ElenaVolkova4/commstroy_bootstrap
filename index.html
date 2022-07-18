@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Коммстрой</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <!-- ссылка на главную страницу -->
+              <a href="index.html">
+                <img src="./images/logo.png" alt="logo"
+              /></a>
+            </div>
+            <div class="offset-3 col-3">
+              <!-- <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="поиск по сайту"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  поиск по сайту
+                </button>
+              </form> -->
+              <form action="https://yandex.ru/search/?" method="get">
+                <input
+                  type="text"
+                  name="text"
+                  id="input"
+                  placeholder="поиск по сайту"
+                />
+              </form>
+            </div>
+            <a href="tel:+74956735452"></a>
+
+            <!-- если написать tel:+74956735452,200 - это сразу добавочный (, дествует как решетка)-->
+            <!-- <a href="mailto:dfgdfg@dfd.ru">почта</a> -->
+            <!-- <a href="https://wa.me/+74956735452">whatsup</a> -->
+
+            <div class="offset-1 col-2">+7/495/ <span>673 54 51</span></div>
+            <div>[заказать звонок}</div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav class="header_menu bg_blue p-0">
+                <ul>
+                  <li class="header_menu_item"><a href="#">Главная</a></li>
+                  <li class="header_menu_item">
+                    <a href="#">Товары</a>
+                    <ul class="sub_menu">
+                      <li><a href="#">Название категории</a></li>
+                      <li><a href="#">Название категории</a></li>
+                      <li><a href="#">Название категории</a></li>
+                      <li><a href="#">Название категории</a></li>
+                      <li><a href="#">Название категории</a></li>
+                      <li><a href="#">Название категории</a></li>
+                    </ul>
+                  </li>
+                  <li class="header_menu_item">
+                    <a href="#">Диски щеточные</a>
+                  </li>
+                  <li class="header_menu_item"><a href="#">О нас</a></li>
+                  <li class="header_menu_item"><a href="#">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main></main>
+
+    <div class="container-fluid bg_gray">
+      <div class="container">
+        <div class="row">
+          <!-- карусель -->
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./images/slide-1.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>Залоговок баннера</h2>
+                  <h3>Залоговок текст</h3>
+
+                  <p>
+                    только до 25 октября Вы можете приобрести в нашем магазине,
+                    запчасти организации, в особенности же постоянное
+                    информационно-пропагандистское обеспечение нашей
+                  </p>
+                  <a href="#" class="btn btn-outline-secondary">Подробнее</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/slide-2.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>Залоговок баннера</h2>
+                  <h3>Залоговок текст</h3>
+
+                  <p>
+                    только до 25 октября Вы можете приобрести в нашем магазине,
+                    запчасти организации, в особенности же постоянное
+                    информационно-пропагандистское обеспечение нашей
+                  </p>
+                  <a href="#" class="btn btn-outline-secondary">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/slide-3.png" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Залоговок баннера</h2>
+                <h3>Залоговок текст</h3>
+
+                <p>
+                  только до 25 октября Вы можете приобрести в нашем магазине,
+                  запчасти организации, в особенности же постоянное
+                  информационно-пропагандистское обеспечение нашей
+                </p>
+                <a href="#" class="btn btn-outline-secondary">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button>
+      </div>
+      <!-- карусель конец-->
+    </div>
+
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row py-4">
+          <aside class="col-3">
+            <nav>
+              <ul class="products bg_blue">
+                <li class="product-item"><a href="#">Диски щеточные</a></li>
+                <li class="product-item"><a href="#">Запчасти Bucher</a></li>
+                <li class="product-item product-active">
+                  <a href="#">Запчасти Johnston</a>
+                </li>
+                <li class="product-item"><a href="#">Ножи грейдерные </a></li>
+                <li class="product-item"><a href="#">Техпластины </a></li>
+                <li class="product-item"><a href="#">Запчасти МТЗ </a></li>
+                <li class="product-item">
+                  <a href="#">Оборудование щеточное </a>
+                </li>
+                <li class="product-item"><a href="#">РВД</a></li>
+                <li class="product-item"><a href="#">Сальсксельмаш </a></li>
+                <li class="product-item"><a href="#">Косилка роторная</a></li>
+                <li class="product-item">
+                  <a href="#">Коробка отбора мощности </a>
+                </li>
+                <li class="product-item"><a href="#">Генераторы</a></li>
+                <li class="product-item"><a href="#">Стартера</a></li>
+                <li class="product-item"><a href="#">Масла и жадкости</a></li>
+                <li class="product-item">
+                  <a href="#">Запчасти по группам</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="events">
+              <div class="events_title">
+                <!-- <img src="./images/news-icon.png" alt="news-icon" /> -->
+                Новости
+              </div>
+              <div class="event">
+                <p class="event_date">19.09.2018</p>
+                <a href="#"
+                  >Скидка более 6 000 рублей на щеточное оборудование</a
+                >
+              </div>
+              <div class="event">
+                <p class="event_date">19.09.2018</p>
+                <a href="#"
+                  >Поступление нового щеточного оборудования на наши склады</a
+                >
+              </div>
+              <div class="event">
+                <p class="event_date">19.09.2018</p>
+                <a href="#"
+                  >Скидка более 6 000 рублей на щеточное оборудование</a
+                >
+              </div>
+              <div class="event">
+                <p class="event_date">19.09.2018</p>
+                <a href="#"
+                  >Поступление нового щеточного оборудования на наши склады</a
+                >
+              </div>
+              <button type="button" class="btn btn-danger">Все новости</button>
+            </div>
+            <img
+              src="./images/promo-banner.jpg"
+              alt="promo-banner"
+              class="col-12 py-3"
+            />
+            <img
+              src="./images/promo-banner.jpg"
+              alt="promo-banner"
+              class="col-12 py-3"
+            />
+          </aside>
+
+          <!-- карточки -->
+          <section class="col-9">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100 bg_card">
+                  <div class="card-img">
+                    <img
+                      src="./images/product-1.jpg"
+                      class="card-img-top"
+                      alt="шестерня"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Шестерня п/з КО-806 (КАМАЗ)</h5>
+                    <p class="card-text">
+                      В наличии <br />
+                      Цену уточняйте
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <button type="button" class="btn btn-primary">
+                      Подробнее
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                      Заказать
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100 bg_card">
+                  <div class="card-img">
+                    <img
+                      src="./images/product-2.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Коробка отбора мощности КОМ-7 КО-713Н (Зубренок)
+                    </h5>
+                    <p class="card-text">
+                      В наличии <br />
+                      Цену уточняйте
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <button type="button" class="btn btn-primary">
+                      Подробнее
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                      Заказать
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100 bg_card">
+                  <div class="card-img">
+                    <img
+                      src="./images/product-3.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Автошина 11,2-R20 (290-508) МТЗ передняя (8 норма
+                      слойности)
+                    </h5>
+                    <p class="card-text">
+                      В наличии <br />
+                      Цену уточняйте
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <button type="button" class="btn btn-primary">
+                      Подробнее
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                      Заказать
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 bg_card">
+                  <div class="card-img">
+                    <img
+                      src="./images/product-1.jpg"
+                      class="card-img-top"
+                      alt="шестерня"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Шестерня п/з КО-806 (КАМАЗ)</h5>
+                    <p class="card-text">
+                      В наличии <br />
+                      Цену уточняйте
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <button type="button" class="btn btn-primary">
+                      Подробнее
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                      Заказать
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100 bg_card">
+                  <div class="card-img">
+                    <img
+                      src="./images/product-2.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Коробка отбора мощности КОМ-7 КО-713Н (Зубренок)
+                    </h5>
+                    <p class="card-text">
+                      В наличии <br />
+                      Цену уточняйте
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <button type="button" class="btn btn-primary">
+                      Подробнее
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                      Заказать
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100 bg_card">
+                  <div class="card-img">
+                    <img
+                      src="./images/product-3.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Автошина 11,2-R20 (290-508) МТЗ передняя (8 норма
+                      слойности)
+                    </h5>
+                    <p class="card-text">
+                      В наличии <br />
+                      Цену уточняйте
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <button type="button" class="btn btn-primary">
+                      Подробнее
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                      Заказать
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 bg_card">
+                  <div class="card-img">
+                    <img
+                      src="./images/product-1.jpg"
+                      class="card-img-top"
+                      alt="шестерня"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Шестерня п/з КО-806 (КАМАЗ)</h5>
+                    <p class="card-text">
+                      В наличии <br />
+                      Цену уточняйте
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <button type="button" class="btn btn-primary">
+                      Подробнее
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                      Заказать
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100 bg_card">
+                  <div class="card-img">
+                    <img
+                      src="./images/product-2.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Коробка отбора мощности КОМ-7 КО-713Н (Зубренок)
+                    </h5>
+                    <p class="card-text">
+                      В наличии <br />
+                      Цену уточняйте
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <button type="button" class="btn btn-primary">
+                      Подробнее
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                      Заказать
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100 bg_card">
+                  <div class="card-img">
+                    <img
+                      src="./images/product-3.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Автошина 11,2-R20 (290-508) МТЗ передняя (8 норма
+                      слойности)
+                    </h5>
+                    <p class="card-text">
+                      В наличии <br />
+                      Цену уточняйте
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <button type="button" class="btn btn-primary">
+                      Подробнее
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                      Заказать
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- карточки конец-->
+
+            <div class="row main">
+              <h3>Продажа запасных частей и оборудования для спецтехники</h3>
+              <p>
+                Наш магазин специализируется на поставке запчастей к различным
+                типам спецтехники. Мы поставляем детали от ведущих мировых
+                производителей для осуществления ремонтных работ:
+              </p>
+              <ul>
+                <li>коммунальной техники</li>
+                <li>дорожных катков;</li>
+                <li>погрузчиков;</li>
+                <li>самосвалов;</li>
+                <li>автобусов;</li>
+                <li>тракторов;</li>
+                <li>автобетоносмесителей;</li>
+              </ul>
+              <p>и другой спецтехники.</p>
+              <p>
+                Для редких моделей можно сделать спецзаказ, и мы поставим нужные
+                детали в оговоренный срок. В ремонте спецтехники время выступает
+                главным фактором. Быстрая поставка нужных запчастей существенно
+                сокращает время простоя, а вместе с ним и финансовые издержки.
+              </p>
+              <p>
+                В магазине представлены детали для спецтехники зарубежного и
+                отечественного производства, поэтому мы можем обеспечить Вас
+                всеми необходимыми запчастями для проведения текущих и
+                капитальных ремонтных работ.
+              </p>
+              <h3>Наши преимущества</h3>
+              <p>
+                С каждым заказчиком работает индивидуальный менеджер, который
+                оперативно подберет необходимые детали для Вашей спецтехники.
+              </p>
+              <ul>
+                <li>высокое качество запчастей;</li>
+                <li>обширный ассортимент;</li>
+                <li>доступные цены;</li>
+                <li>быстрая доставка.</li>
+              </ul>
+              <p>
+                Мы постоянно совершенствуем наши логистические мощности. Для
+                этого у нас есть собственный склад, который позволяет оперативно
+                выполнять заказы и расширять ассортимент в наличии. Приобретая
+                детали у нас, вы можете быть уверенным, что после их установки
+                ваше оборудование будет работать бесперебойно и продолжительно!
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-fluid bg_blue">
+        <div class="container">
+          <div class="row footer">
+            <div class="col-2">
+              <h3 class="footer_menu_title">О нас</h3>
+              <ul class="footer_menu">
+                <li class="footer_item">
+                  <a href="#">О компании</a>
+                </li>
+                <li class="footer_item">
+                  <a href="#">Контакты</a>
+                </li>
+                <li class="footer_item">
+                  <a href="#">Фотогалерея</a>
+                </li>
+                <li class="footer_item">
+                  <a href="#">Новости</a>
+                </li>
+                <li class="footer_item">
+                  <a href="#">Отзывы</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <h3 class="footer_menu_title">Товары и услуги</h3>
+              <ul class="footer_menu">
+                <li class="footer_item">
+                  <a href="#" class="">Диски щеточные</a>
+                </li>
+                <li class="footer_item">
+                  <a href="#">Ножи грейдерные</a>
+                </li>
+                <li class="footer_item">
+                  <a href="#">Техапластины</a>
+                </li>
+                <li class="footer_item">
+                  <a href="#">Запчасти мтз</a>
+                </li>
+                <li class="footer_item">
+                  <a href="#">Оборудование щеточное</a>
+                </li>
+                <li class="footer_item">
+                  <a href="#">Сальсксельмаш</a>
+                </li>
+                <li class="footer_item">
+                  <a href="#">Коробка отбора мощности</a>
+                </li>
+                <li class="footer_item">
+                  <a href="#">Другие запчасти</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <h3 class="footer_menu_title">Товары и услуги</h3>
+              <ul class="footer_menu">
+                <li class="footer_item">
+                  <a href="#">Косилка роторная</a>
+                </li>
+                <li class="footer_item">
+                  <a href="#">Каталоги</a>
+                </li>
+                <li class="footer_item">
+                  <a href="#">Масла и жидкости</a>
+                </li>
+                <li class="footer_item">
+                  <a href="#">РВД изготовление</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <h3 class="footer_menu_title">Прайс-листы и предложения</h3>
+              <li class="footer_item">
+                <a href="#">Номенклатура</a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg_gray">
+        <div class="container">
+          <div class="row footer_main">
+            <div class="col-1">&copy; ЗКМ-АВТО, 2018 г.</div>
+            <div class="col-2">
+              <a href="#">Политика конфиденциальности</a>
+              <a href="#">Пожаловаться на содержимое</a>
+            </div>
+            <div class="col-4">
+              Политика в отношении обработки персональных данных
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script
+      async
+      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A72b6a57db72063b00d59f30eb67f01f9d8089f47c2b8374f28fe519e2af80fc1&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
+    ></script> -->
+
+    <script src="./css/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
