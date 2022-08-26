@@ -397,6 +397,12 @@ a {
 .footer_main {
   color: #7d7d7d;
 }
+
+.footer_main a {
+  color: #7d7d7d;
+  text-decoration: underline;
+}
+
 /* text-decoration: underline; */
 
 /* удалить   text-decoration: none; со ссылок */
